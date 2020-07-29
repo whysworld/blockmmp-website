@@ -1,0 +1,115 @@
+
+body {
+    background: #987866;
+    height    : 100vh;
+    padding   : 0;
+    margin    : 0;
+    scroll-behavior: smooth;
+    #totopicon{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        color: #293372;
+    }
+    .wrapper {
+        width           : 900px;
+        box-shadow      : 0px 2px 13px 0px rgba(0, 0, 0, 0.75);
+        background-color: white;
+        margin          : 40px auto;
+        border-radius   : 5px;
+        padding         : 40px;
+
+        div#menu-wrapper {
+            ul.menu {
+                list-style     : none;
+                display        : flex;
+                justify-content: center;
+                margin         : 20px 0px;
+
+                li.menu-item {
+                    padding    : 5px 15px;
+                    font-weight: bold;
+                    font-size  : 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #293372;
+                    }
+                }
+            }
+
+        }
+
+        .content {
+            margin-top: 100px;
+        }
+
+        div#logo {
+            justify-content: center;
+            display        : flex;
+
+            img {
+                width: 150px;
+            }
+        }
+
+        div#team,
+        div#contact {
+            margin-top: 100px;
+
+        }
+
+        div#partner {
+            margin-top: 100px;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        .title {
+            font-size  : 32px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size     : 18px;
+            text-align    : justify;
+            line-height   : 28px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .wrapper{
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    div#menu-wrapper{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    div#menu-wrapper{
+        display: none !important;
+    }
+    body{
+        background-color: white !important;
+    }
+    .wrapper{
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    html{
+        overflow-x: hidden;
+    }
+    div#team img{
+        width: 100% !important;
+    }
+}
